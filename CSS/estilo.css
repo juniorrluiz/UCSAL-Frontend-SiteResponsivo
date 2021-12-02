@@ -21,7 +21,14 @@ main {
 header {
   width: 720px;
   height: 60px;
-  display: inline-block;
+  display: flex;
+  background-color: #3E45ff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(71, 166, 255);
+  
+  
+
 }
 
 header .img_icone {
@@ -29,36 +36,98 @@ header .img_icone {
   width: 65px;
   display: inline-block;
   float: left;
-  padding: 5px 0 0 0;
+  
+  
 }
 
 header h1 {
   float: left;
-  display: inline-block;
-  font-family: "Grechen Fuemen";
-  font-size: 60px;
+  display: flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 50px;
   padding-top: 0;
   margin-top: 0px;
+  margin-left: 10px;
+  
 }
 
 header h1 a {
   text-decoration: none;
-  color: #cccccc;
+  color: #ffffff;
 }
 
 header #menu_social {
-  display: inline-block;
-  height: 34px;
+  margin-top: -15px;
+  width: 550px;
+  margin-bottom: 20px;
   float: right;
+  
 }
 
 header #menu_social ul {
-margin-right: 50px;
+  height: 10px;
+  float: right;
+
 }
 
 header #menu_social ul li {
-  margin: 0;
-  padding: 0;
+  
+  padding: 10px;
   list-style: none;
-  float: left;
+  float: right;
+  
+}
+
+header #menu_social ul li a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  text-indent: -999999px;
+}
+
+.faq {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 20%;
+  background-image: url(../imagens/menu/menu_faq.svg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  margin: auto;
+  
+  
+}
+
+.sobre {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 20%;
+  background-image: url(../imagens/menu/menu_sobrenos.svg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  margin: auto;
+  
+  
+}
+
+.contato {
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-radius: 20%;
+  background-image: url(../imagens/menu/menu_contato.svg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  margin: auto;
+  
+  
+  
 }
