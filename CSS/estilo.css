@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  font-family: "PT Sans", Arial, Helvetica, sens-sans-serif;
+  margin-right: auto;
+}
+
+main {
+  width: 720px;
+  margin: auto;
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+}
+
+header {
+  width: 720px;
+  height: 60px;
+  display: inline-block;
+}
+
+header .img_icone {
+  height: 60px;
+  width: 65px;
+  display: inline-block;
+  float: left;
+  padding: 5px 0 0 0;
+}
+
+header h1 {
+  float: left;
+  display: inline-block;
+  font-family: "Grechen Fuemen";
+  font-size: 60px;
+  padding-top: 0;
+  margin-top: 0px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+header #menu_social {
+  display: inline-block;
+  height: 34px;
+  float: right;
+}
+
+header #menu_social ul {
+margin-right: 50px;
+}
+
+header #menu_social ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>W8: Calcule sua necessidade calórica</title>
+    <link rel="stylesheet" type="text/css "href="CSS/estilo.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/website_icone2.png">
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="imagens/website_icone2.png" alt="Icone do website" class="img_icone">
+        <h1><a href="#">W8</a> </h1>
+
+        <nav id="menu_social">
+          <ul>
+            <li> <a href="#" class="faq">F.A.Q.</a> </li>
+            <li> <a href="#" class="sobre">Sobre Nós</a> </li>
+            <li> <a href="#" class="contato">Contato</a> </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="caluladora">
+        <h1>Calcular Calorias Diárias</h1>
+        <p>Por favor, informe as seguintes informações:</p>
+
+        <!-- INÍCIO DA CALCULADORA -->
+        <form>
+
+          <!-- TABELA SOBRE O SEXO DO USUÁRIO -->
+          <table id="corpo_calculadora_sexo">
+
+            <tr>
+              <th>Sexo</th>
+              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolomasc.svg" alt="Simbolo do sexo masculino" height="80px" width="80px"/><br>
+                <input type="radio" id="corpo_calculadora_simbolomasc" name="sexo_usuario" value="Homem">
+                <label for="vehicle1">Masculino</label><br>
+              </td>
+
+              <td>
+                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolofem.svg" alt="Simbolo do sexo feminino" height="80px" width="80px"/><br>
+                <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                <label for="vehicle1">Feminino</label><br>
+              </td>
+            </tr>
+
+          </table>
+
+          <!-- TABELA SOBRE A IDADE DO USUÁRIO -->
+          <table id="corpo_calculadora_idade">
+
+            <tr>
+              <th>Idade</th>
+              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="imagens/corpo/calculadora/corpo_idade.svg" alt="Ícone de calendário" height="80px" width="80px" />
+              </td>
+
+              <td>
+                <input type="number" id="corpo_form_idade" placeholder="18 (anos)"/>
+              </td>
+            </tr>
+
+          </table>
+
+          <!-- TABELA SOBRE A ALTURA DO USUÁRIO -->
+          <table id="corpo_calculadora_altura">
+
+            <tr>
+              <th>Altura</th>
+              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="imagens/corpo/calculadora/corpo_altura.svg" alt="Ícone de altura" height="80px" width="80px" />
+              </td>
+
+              <td>
+                <input type="number" step="any" id="corpo_form_altura" placeholder="1,90 (cm)"/>
+              </td>
+            </tr>
+
+          </table>
+
+          <!-- TABELA SOBRE O PESO DO USUÁRIO -->
+          <table id="corpo_calculadora_peso">
+
+            <tr>
+              <th>Peso</th>
+              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="imagens/corpo/calculadora/corpo_peso.svg" alt="Ícone de balança de banheiro" height="80px" width="80px" />
+              </td>
+
+              <td>
+                <input type="number" id="corpo_form_peso" placeholder="71 (kg)"/>
+              </td>
+            </tr>
+
+          </table>
+
+          <!-- TABELA SOBRE A ATIVIDADE DIÁRIA DO USUÁRIO -->
+          <table id="corpo_calculadora_peso">
+
+            <!-- CABEÇALHO DA TABELA -->
+            <tr>
+              <th>Atividade Diária</th>
+              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+            </tr>
+
+            <!-- ONDE FICA CADA ESCOLHA (DAS 4 POSSÍVEIS) -->
+            <tr>
+              <!-- ATIVIDADE LEVE -->
+              <div id="atividade_leve">
+                <td>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" alt="Pessoa palito sentado" height="80px" width="80px"/><br>
+                </td>
+
+                <td>
+                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <label for="vehicle1">Atividade Leve</label><br>
+                  <p>Sentado na maior parte do tempo (ex.: trabalho em escritório)</p>
+                </td>
+              </div>
+
+              <!-- ATIVIDADE MODERADA -->
+              <div id="atividade_moderada">
+                <td>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhomoderado.png" alt="Pessoa palito garçom" height="80px" width="50px"/><br>
+                </td>
+
+                <td>
+                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <label for="vehicle1">Atividade Moderada</label><br>
+                  <p>Em pé na maior parte do tempo (ex.: garçon)</p>
+                </td>
+              </div>
+
+              <!-- ATIVIDADE ELEVADA -->
+              <div id="atividade_elevada">
+                <td>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" alt="Pessoa palito andando" height="80px" width="80px"/><br>
+                </td>
+
+                <td>
+                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <label for="vehicle1">Atividade Elevada</label><br>
+                  <p>Andando na maior parte do tempo (ex.: vendedor)</p>
+                </td>
+              </div>
+
+              <!-- ATIVIDADE PESADA -->
+              <div id="atividade_pesada">
+                <td>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhopesado.png" alt="Pessoa palito carregando caixa" height="80px" width="50px"/><br>
+                </td>
+
+                <td>
+                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <label for="vehicle1">Atividade Pesada</label><br>
+                  <p>Trabalho que exige muita atividade (ex.: entregador)</p>
+                </td>
+              </div>
+
+            </tr>
+
+          </table>
+
+        </form>
+      </section>
+
+      <section id="faq">
+      </section>
+
+      <section id="sobre_nos">
+      </section>
+
+      <footer>
+      </footer>
+    </main>
+
+  </body>
+</html>
