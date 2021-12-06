@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>W8: Calcule sua necessidade calórica</title>
-    <link rel="stylesheet" type="text/css "href="CSS/estilo.css"/>
-    <link rel="shortcut icon" type="image/x-icon" href="imagens/website_icone2.png">
-  </head>
-  <body>
-    <main>
-      <header>
-        <img src="imagens/website_icone2.png" alt="Icone do website" class="img_icone">
-        <h1><a href="#">U8</a> </h1>
 
-        <nav id="menu_social">
-          <ul>
-            <li> <a href="#" class="faq">F.A.Q.</a> </li>
-            <li> <a href="#" class="sobre">Sobre Nós</a> </li>
-            <li> <a href="#" class="contato">Contato</a> </li>
-          </ul>
-        </nav>
-      </header>
+<head>
+  <meta charset="utf-8">
+  <title>W8: Calcule sua necessidade calórica</title>
+  <link rel="stylesheet" type="text/css " href="CSS/estilo.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="imagens/website_icone2.png">
+</head>
 
-      <section id="caluladora">
-        <h1>Calcular Calorias Diárias</h1>
-        <p>Por favor, informe as seguintes informações:</p>
+<body>
+  <main>
+
+    <!-- MENU DO SITE -->
+    <header>
+      <img src="imagens/website_icone2.png" alt="Icone do website" class="img_icone">
+      <h1><a href="#">U8</a> </h1>
+
+      <nav id="menu_social">
+        <ul>
+          <li> <a href="#faq" class="faq">F.A.Q.</a> </li>
+          <li> <a href="#" class="sobre">Sobre Nós</a> </li>
+          <li> <a href="#" class="contato">Contato</a> </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="caluladora">
+      <h1>Calcular Calorias Diárias</h1>
+      <h3>Por favor, informe as seguintes informações:</p>
 
         <!-- INÍCIO DA CALCULADORA -->
         <form>
@@ -33,18 +37,25 @@
 
             <tr>
               <th>Sexo</th>
-              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+              <th>
+                <a href="#faq_sexo">
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                  </a>
+                </th>
             </tr>
 
             <tr>
               <td>
-                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolomasc.svg" alt="Simbolo do sexo masculino" height="80px" width="80px"/><br>
+                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolomasc.svg" alt="Simbolo do sexo masculino"
+                  height="80px" width="80px" /><br>
                 <input type="radio" id="corpo_calculadora_simbolomasc" name="sexo_usuario" value="Homem">
                 <label for="vehicle1">Masculino</label><br>
               </td>
 
               <td>
-                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolofem.svg" alt="Simbolo do sexo feminino" height="80px" width="80px"/><br>
+                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolofem.svg" alt="Simbolo do sexo feminino"
+                  height="80px" width="80px" /><br>
                 <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
                 <label for="vehicle1">Feminino</label><br>
               </td>
@@ -57,16 +68,21 @@
 
             <tr>
               <th>Idade</th>
-              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+              <th>
+                <a href="#faq_idade">
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                  </a>
             </tr>
 
             <tr>
               <td>
-                <img src="imagens/corpo/calculadora/corpo_idade.svg" alt="Ícone de calendário" height="80px" width="80px" />
+                <img src="imagens/corpo/calculadora/corpo_idade.svg" alt="Ícone de calendário" height="80px"
+                  width="80px" />
               </td>
 
               <td>
-                <input type="number" id="corpo_form_idade" placeholder="18 (anos)"/>
+                <input type="number" id="corpo_form_idade" placeholder="18 (anos)" />
               </td>
             </tr>
 
@@ -77,16 +93,21 @@
 
             <tr>
               <th>Altura</th>
-              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+              <th>
+                <a href="#faq_altura">
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                  </a>
             </tr>
 
             <tr>
               <td>
-                <img src="imagens/corpo/calculadora/corpo_altura.svg" alt="Ícone de altura" height="80px" width="80px" />
+                <img src="imagens/corpo/calculadora/corpo_altura.svg" alt="Ícone de altura" height="80px"
+                  width="80px" />
               </td>
 
               <td>
-                <input type="number" step="any" id="corpo_form_altura" placeholder="1,90 (cm)"/>
+                <input type="number" step="any" id="corpo_form_altura" placeholder="1,90 (cm)" />
               </td>
             </tr>
 
@@ -97,28 +118,37 @@
 
             <tr>
               <th>Peso</th>
-              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+              <th>
+                <a href="#faq_peso">
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                  </a>
             </tr>
 
             <tr>
               <td>
-                <img src="imagens/corpo/calculadora/corpo_peso.svg" alt="Ícone de balança de banheiro" height="80px" width="80px" />
+                <img src="imagens/corpo/calculadora/corpo_peso.svg" alt="Ícone de balança de banheiro" height="80px"
+                  width="80px" />
               </td>
 
               <td>
-                <input type="number" id="corpo_form_peso" placeholder="71 (kg)"/>
+                <input type="number" id="corpo_form_peso" placeholder="71 (kg)" />
               </td>
             </tr>
 
           </table>
 
           <!-- TABELA SOBRE A ATIVIDADE DIÁRIA DO USUÁRIO -->
-          <table id="corpo_calculadora_peso">
+          <table id="corpo_calculadora_atividade">
 
             <!-- CABEÇALHO DA TABELA -->
             <tr>
               <th>Atividade Diária</th>
-              <th><img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao" height="15px" width="15px" class="calc_img_info"/></th>
+              <th>
+                <a href="#faq_atividade">
+                <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                </a>
             </tr>
 
             <!-- ONDE FICA CADA ESCOLHA (DAS 4 POSSÍVEIS) -->
@@ -126,11 +156,12 @@
               <!-- ATIVIDADE LEVE -->
               <div id="atividade_leve">
                 <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" alt="Pessoa palito sentado" height="80px" width="80px"/><br>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" alt="Pessoa palito sentado"
+                    height="80px" width="80px" /><br>
                 </td>
 
                 <td>
-                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <input type="radio" id="corpo_calculadora_ativleve" name="atividade_diaria" value="Mulher">
                   <label for="vehicle1">Atividade Leve</label><br>
                   <p>Sentado na maior parte do tempo (ex.: trabalho em escritório)</p>
                 </td>
@@ -139,11 +170,12 @@
               <!-- ATIVIDADE MODERADA -->
               <div id="atividade_moderada">
                 <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhomoderado.png" alt="Pessoa palito garçom" height="80px" width="50px"/><br>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhomoderado.png" alt="Pessoa palito garçom"
+                    height="80px" width="50px" /><br>
                 </td>
 
                 <td>
-                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <input type="radio" id="corpo_calculadora_ativmoderada" name="atividade_diaria" value="Mulher">
                   <label for="vehicle1">Atividade Moderada</label><br>
                   <p>Em pé na maior parte do tempo (ex.: garçon)</p>
                 </td>
@@ -152,11 +184,12 @@
               <!-- ATIVIDADE ELEVADA -->
               <div id="atividade_elevada">
                 <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" alt="Pessoa palito andando" height="80px" width="80px"/><br>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" alt="Pessoa palito andando"
+                    height="80px" width="80px" /><br>
                 </td>
 
                 <td>
-                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <input type="radio" id="corpo_calculadora_ativelevada" name="atividade_diaria" value="Mulher">
                   <label for="vehicle1">Atividade Elevada</label><br>
                   <p>Andando na maior parte do tempo (ex.: vendedor)</p>
                 </td>
@@ -165,33 +198,223 @@
               <!-- ATIVIDADE PESADA -->
               <div id="atividade_pesada">
                 <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhopesado.png" alt="Pessoa palito carregando caixa" height="80px" width="50px"/><br>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhopesado.png"
+                    alt="Pessoa palito carregando caixa" height="80px" width="50px" /><br>
                 </td>
 
                 <td>
-                  <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                  <input type="radio" id="corpo_calculadora_ativpesada" name="atividade_diaria" value="Mulher">
                   <label for="vehicle1">Atividade Pesada</label><br>
                   <p>Trabalho que exige muita atividade (ex.: entregador)</p>
                 </td>
               </div>
-
             </tr>
-
           </table>
-
         </form>
-        
-      </section>
+    </section>
 
-      <section id="faq">
-      </section>
+    <!-- INÍCIO DOS RESULTADOS -->
+    <section id="resultados">
+      <h1>Resultados</h1>
 
-      <section id="sobre_nos">
-      </section>
+      <table id="resultado_perder">
+        <tr>
+          <img src="imagens/corpo/resultado/corpo_resultado_perder.svg" alt="Pessoa palito carregando caixa"
+            height="100px" width="100px" />
+        </tr>
 
-      <footer>
-      </footer>
-    </main>
+        <tr>
+          <p>Para PERDER peso</p>
+          <p>Aproximadamente</p>
+          <label id="resultado_perder_calorias">XXXX</label>
+          <p>calorias</p>
+        </tr>
+      </table>
 
-  </body>
+      <table id="resultado_manter">
+        <tr>
+          <img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
+            height="100px" width="100px" />
+        </tr>
+
+        <tr>
+          <p>Para MANTER peso</p>
+          <p>Aproximadamente</p>
+          <label id="resultado_manter_calorias">XXXX</label>
+          <p>calorias</p>
+        </tr>
+      </table>
+
+      <table id="resultado_manter">
+        <tr>
+          <img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
+            height="100px" width="100px" />
+        </tr>
+
+        <tr>
+          <p>Para GANHAR peso</p>
+          <p>Aproximadamente</p>
+          <label id="resultado_ganhar_calorias">XXXX</label>
+          <p>calorias</p>
+        </tr>
+      </table>
+    </section>
+
+    <!-- INÍCIO DO COMPARTILHE -->
+    <section id="compartilhe">
+      <table>
+        <td>
+          <img src="imagens/corpo/compartilhe/corpo_compartilhe_facebook.svg" alt="Ícone do Facebook" height="40px"
+            width="40px" />
+        </td>
+
+        <td>
+          <img src="imagens/corpo/compartilhe/corpo_compartilhe_twitter.svg" alt="Ícone do Twitter" height="40px"
+            width="40px" />
+        </td>
+
+        <td>
+          <img src="imagens/corpo/compartilhe/corpo_compartilhe_instagram.svg" alt="Ícone do Instagram" height="40px"
+            width="40px" />
+        </td>
+
+        <td>
+          <img src="imagens/corpo/compartilhe/corpo_compartilhe_pinterest.svg" alt="Ícone do Pinterest" height="40px"
+            width="40px" />
+        </td>
+
+        <td>
+          <img src="imagens/corpo/compartilhe/corpo_compartilhe_tumblr.svg" alt="Ícone do Tumblr" height="40px"
+            width="40px" />
+        </td>
+      </table>
+    </section>
+
+    <!-- INÍCIO DO F.A.Q. -->
+    <section id="faq">
+      <h1>Perguntas Frequentes</h1>
+
+      <div>
+        <h5>Saber as calorias que posso consumir todo dia realmente ajuda?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="faq_sexo">
+        <h5>Há diferença entre o consumo diário de homens e mulheres?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="faq_idade">
+        <h5>Como a idade influência na ingestão de calorias?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="faq_altura">
+        <h5>Tem alguma mudança se eu for mais alto que a média?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="faq_peso">
+        <h5>Uma pessoa mais magra influência no resultado final?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="faq_atividade">
+        <h5>Me alimento bastante mas sou bem ativo. Isso pode alterar algo?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+
+    <!-- INÍCIO DO SOBRE NÓS -->
+    <section id="sobrenos">
+      <h1>Sobre a U8</h1>
+
+      <div id="sobrenos_quem_somos">
+        <h5>Quem somos?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div id="sobrenos_nosso_time">
+        <h5>O nosso time</h5>
+        <table id="sobrenos_nosso_time_imagens">
+          <tr>
+            <td>
+              <img src="imagens/corpo/sobre/corpo_sobrenos_ceo.png" alt="Foto CEO" height="80px" width="80px"/>
+            </td>
+
+            <td>
+              <img src="imagens/corpo/sobre/corpo_sobrenos_engsoft.png" alt="Foto CEO" height="80px" width="80px"/>
+            </td>
+
+            <td>
+              <img src="imagens/corpo/sobre/corpo_sobrenos_gerproj.png" alt="Foto CEO" height="80px" width="80px"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td>CEO</td>
+            <td>Engenheiro de Software</td>
+            <td>Gerente de Projetos</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="sobrenos_contato">
+        <form>
+          <label for="nome">Nome (requerido)</label><br>
+          <input type="text" id="nome" name="nome"><br>
+
+          <label for="email">Email (requerido)</label><br>
+          <input type="email" id="email" name="email"><br>
+
+          <label for="corpo">Mensagem</label><br>
+          <input type="text" id="corpo" name="mensagem"><br>
+
+          <button type=”submit”>Enviar</button>
+        </form>
+
+      </div>
+    </section>
+
+    <footer>
+    </footer>
+  </main>
+
+</body>
+
 </html>
