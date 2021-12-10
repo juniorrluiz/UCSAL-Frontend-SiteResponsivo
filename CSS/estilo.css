@@ -3,6 +3,9 @@
 html {
 scroll-behavior: smooth;
 }
+h1,h3{
+  margin-left: 15px;
+}
 
 body {
   margin: auto;
@@ -86,6 +89,19 @@ header #menu_social ul li a {
   text-indent: -999999px;
 }
 
+p{
+  text-align: justify;
+  margin-right: 15px;
+
+}
+section{
+  margin-left: 5px;
+}
+
+td{
+  text-align: center;
+}
+
 .faq {
   background-color: #ffffff;
   border-style: solid;
@@ -115,6 +131,15 @@ header #menu_social ul li a {
   
   
 }
+.sobrenos_nosso_time{
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 15px;
+  justify-content: space-around;
+  margin-top: 5px;
+  align-items: center;
+  flex-direction: column;
+}
 
 .contato {
   background-color: #ffffff;
@@ -130,4 +155,32 @@ header #menu_social ul li a {
   
   
   
+}
+
+div {
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 15px;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.div1{
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 15px;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-right: 50px;
+
+}
+
+.div2{
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 15px;
+  justify-content: space-around;
+  margin-top: 5px;
+  margin-right: 50px;
+
 }
