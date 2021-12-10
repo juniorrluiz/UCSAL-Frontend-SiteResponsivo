@@ -27,15 +27,16 @@
 
     <section id="caluladora">
       <h1>Calcular Calorias Diárias</h1>
-      <h3>Por favor, informe as seguintes informações:</p>
+      <h3>Por favor, informe as seguintes informações:</h3>
 
         <!-- INÍCIO DA CALCULADORA -->
         <form>
 
           <!-- TABELA SOBRE O SEXO DO USUÁRIO -->
+          <div id="div1">
           <table id="corpo_calculadora_sexo">
 
-            <tr>
+            <tr style="display: flex;" >
               <th>Sexo</th>
               <th>
                 <a href="#faq_sexo">
@@ -66,7 +67,7 @@
           <!-- TABELA SOBRE A IDADE DO USUÁRIO -->
           <table id="corpo_calculadora_idade">
 
-            <tr>
+            <tr style="display: flex;">
               <th>Idade</th>
               <th>
                 <a href="#faq_idade">
@@ -89,9 +90,9 @@
           </table>
 
           <!-- TABELA SOBRE A ALTURA DO USUÁRIO -->
-          <table id="corpo_calculadora_altura">
+          <table id="corpo_calculadora_altura" style="margin-top: 15px;" >
 
-            <tr>
+            <tr style="display: flex;" >
               <th>Altura</th>
               <th>
                 <a href="#faq_altura">
@@ -114,9 +115,9 @@
           </table>
 
           <!-- TABELA SOBRE O PESO DO USUÁRIO -->
-          <table id="corpo_calculadora_peso">
+          <table id="corpo_calculadora_peso" style="margin-left: -62px; margin-top: 15px;" >
 
-            <tr>
+            <tr style="display: flex;" >
               <th>Peso</th>
               <th>
                 <a href="#faq_peso">
@@ -135,14 +136,15 @@
                 <input type="number" id="corpo_form_peso" placeholder="71 (kg)" />
               </td>
             </tr>
-
           </table>
+        </div>
 
           <!-- TABELA SOBRE A ATIVIDADE DIÁRIA DO USUÁRIO -->
+          <div id="div2">
           <table id="corpo_calculadora_atividade">
 
             <!-- CABEÇALHO DA TABELA -->
-            <tr>
+            <tr style="display: flex;" >
               <th>Atividade Diária</th>
               <th>
                 <a href="#faq_atividade">
@@ -152,18 +154,18 @@
             </tr>
 
             <!-- ONDE FICA CADA ESCOLHA (DAS 4 POSSÍVEIS) -->
-            <tr>
+            <tr style="display: flex;" >
               <!-- ATIVIDADE LEVE -->
-              <div id="atividade_leve">
+              <div id="atividade_leve"  style="margin-top: 15px;">
                 <td>
                   <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" alt="Pessoa palito sentado"
                     height="80px" width="80px" /><br>
                 </td>
 
-                <td>
-                  <input type="radio" id="corpo_calculadora_ativleve" name="atividade_diaria" value="Leve">
-                  <label for="vehicle1">Atividade Leve</label><br>
-                  <p>Sentado na maior parte do tempo (ex.: trabalho em escritório)</p>
+                <td style="margin-top: 4px;">
+                  <input type="radio" id="corpo_calculadora_ativleve" name="atividade_diaria" value="Leve" >
+                  <label for="vehicle1"> <br> Atividade Leve</label><br>
+                  <p>Sentado na maior parte do tempo (ex.:trabalho em escritório)</p>
                 </td>
               </div>
 
@@ -176,22 +178,22 @@
 
                 <td>
                   <input type="radio" id="corpo_calculadora_ativmoderada" name="atividade_diaria" value="Moderada">
-                  <label for="vehicle1">Atividade Moderada</label><br>
-                  <p>Em pé na maior parte do tempo (ex.: garçon)</p>
+                  <label for="vehicle1"> <br> Atividade Moderada</label><br>
+                  <p>Em pé na maior parte do tempo (ex.:garçon)</p>
                 </td>
               </div>
 
               <!-- ATIVIDADE ELEVADA -->
               <div id="atividade_elevada">
-                <td>
+                <td >
                   <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" alt="Pessoa palito andando"
                     height="80px" width="80px" /><br>
                 </td>
 
                 <td>
                   <input type="radio" id="corpo_calculadora_ativelevada" name="atividade_diaria" value="Elevada">
-                  <label for="vehicle1">Atividade Elevada</label><br>
-                  <p>Andando na maior parte do tempo (ex.: vendedor)</p>
+                  <label for="vehicle1"> <br> Atividade Elevada</label><br>
+                  <p>Andando na maior parte do tempo (ex.:vendedor)</p>
                 </td>
               </div>
 
@@ -204,14 +206,16 @@
 
                 <td>
                   <input type="radio" id="corpo_calculadora_ativpesada" name="atividade_diaria" value="Pesada">
-                  <label for="vehicle1">Atividade Pesada</label><br>
-                  <p>Trabalho que exige muita atividade (ex.: entregador)</p>
+                  <label for="vehicle1" style="margin-left: 5px;"> <br> Atividade <br> Pesada</label><br>
+                  <p>Trabalho que exige muita atividade (ex.:entregador)</p>
                 </td>
               </div>
             </tr>
           </table>
 
-          <button name="calcular" type="button" onclick="calcularCalorias()">Calcular as calorias!</button>
+          <button name="calcular" type="button" onclick="calcularCalorias()">Calcular as calorias !</button>
+
+        </div>
         </form>
     </section>
 
@@ -263,26 +267,26 @@
     </section>
 
     <!-- INÍCIO DO COMPARTILHE -->
-    <section id="compartilhe">
+    <section id="compartilhe" style="margin-left: 210px;">
       <table>
         <td>
           <img src="imagens/corpo/compartilhe/corpo_compartilhe_facebook.svg" alt="Ícone do Facebook" height="40px"
-            width="40px" />
+            width="40px" style="margin-right: 25px;" />
         </td>
 
         <td>
           <img src="imagens/corpo/compartilhe/corpo_compartilhe_twitter.svg" alt="Ícone do Twitter" height="40px"
-            width="40px" />
+            width="40px" style="margin-right: 25px;"/>
         </td>
 
         <td>
           <img src="imagens/corpo/compartilhe/corpo_compartilhe_instagram.svg" alt="Ícone do Instagram" height="40px"
-            width="40px" />
+            width="40px" style="margin-right: 25px;"/>
         </td>
 
         <td>
           <img src="imagens/corpo/compartilhe/corpo_compartilhe_pinterest.svg" alt="Ícone do Pinterest" height="40px"
-            width="40px" />
+            width="40px" style="margin-right: 25px;" />
         </td>
 
         <td>
@@ -371,14 +375,21 @@
         </p>
       </div>
 
-      <div id="sobrenos_nosso_time">
+      <div id="sobrenos_nosso_time" style="flex-wrap: wrap;
+      display: flex;
+      margin-left: 15px;
+      justify-content: space-around;
+      margin-top: 5px;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 15px;">
         <h5>O nosso time</h5>
+        <br>
         <table id="sobrenos_nosso_time_imagens">
           <tr>
             <td>
               <img src="imagens/corpo/sobre/corpo_sobrenos_ceo.png" alt="Foto CEO" height="80px" width="80px"/>
             </td>
-
             <td>
               <img src="imagens/corpo/sobre/corpo_sobrenos_engsoft.png" alt="Foto CEO" height="80px" width="80px"/>
             </td>
@@ -419,70 +430,6 @@
 
 </body>
 
-<script>
-  function calcularCalorias() {
-    var sexo_do_usuario;
-    var sexo = document.getElementsByName('sexo_usuario');
-    for (var i = 0; i < sexo.length; i++) {
-     if (sexo[i].checked) {
-      sexo_do_usuario = sexo[i].value;
-      }
-    }
-
-    var idade = document.getElementById("corpo_form_idade").value;
-
-    var altura = document.getElementById("corpo_form_altura").value;
-
-    var peso = document.getElementById("corpo_form_peso").value;
-
-    var atividade_diaria;
-    var atividade = document.getElementsByName('atividade_diaria');
-    for (var i = 0; i < atividade.length; i++) {
-     if (atividade[i].checked) {
-      atividade_diaria = atividade[i].value;
-      }
-    }
-
-    var atividade_diaria_valor;
-    switch (atividade_diaria) {
-      case 'Leve':
-        atividade_diaria_valor = 1.2;
-        break;
-      case 'Moderada':
-        atividade_diaria_valor = 1,3;
-        break;
-      case 'Elevada':
-        atividade_diaria_valor = 1,5;
-        break;
-      case 'Pesada':
-        atividade_diaria_valor = 1,7;
-        break;
-      default:
-//        alert("Erro #451!")
-    }
-
-    var resultado;
-    if (sexo_do_usuario = "Homem") {
-      resultado = (66.5 + (13.4 * peso) + (5 * altura) - (6.7 * idade)) * atividade_diaria_valor;
-//      alert("Resultado H: " + resultado);
-    } else if (sexo_do_usuario = "Mulher") {
-      resultado = (65.1 + (9.6 * Peso) + (1.8 * altura) - (4.5 * idade)) * atividade_diaria_valor;
-//      alert("Resultado M: " + resultado);
-    }
-
-    var resultado_perder = Math.round(resultado - 200);
-    var resultado_manter = Math.round(resultado);
-    var resultado_ganhar = Math.round(resultado + 200);
-
-//    alert(resultado_ganhar);
-//    alert(resultado_manter);
-//    alert(resultado_perder);
-
-    document.getElementById('resultado_ganhar_calorias').innerHTML = resultado_ganhar;
-    document.getElementById('resultado_manter_calorias').innerHTML = resultado_manter;
-    document.getElementById('resultado_perder_calorias').innerHTML = resultado_perder;
-  }
-
-</script>
+<script src="script.js"> </script>
 
 </html>
