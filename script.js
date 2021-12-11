@@ -14,6 +14,8 @@ function calcularCalorias() {
 
   var idade = document.getElementById("corpo_form_idade").value;
 
+  console.log(idade);
+
   var altura = document.getElementById("corpo_form_altura").value;
 
   var peso = document.getElementById("corpo_form_peso").value;
