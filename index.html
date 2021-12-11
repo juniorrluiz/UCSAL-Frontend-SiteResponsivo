@@ -13,9 +13,10 @@
 
     <!-- MENU DO SITE -->
     <header>
+      <div id="divmenu">
       <img src="imagens/website_icone2.png" alt="Icone do website" class="img_icone">
       <h1><a href="#">U8</a> </h1>
-
+      </div>
       <nav id="menu_social">
         <ul>
           <li> <a href="#faq" class="faq">F.A.Q.</a> </li>
@@ -30,253 +31,276 @@
       <h3>Por favor, informe as seguintes dados:</h3>
 
         <!-- INÍCIO DA CALCULADORA -->
-        <form>
+          <div class="container">
+            <div class="row gx-5 ">
+          
+              <!-- TABELA SOBRE O SEXO DO USUÁRIO -->
+              <div class="col-lg-3 col-md-6" style="margin-right: 120px;">
+                <table id="corpo_calculadora_sexo">
 
-          <!-- TABELA SOBRE O SEXO DO USUÁRIO -->
-          <div id="div1">
-          <table id="corpo_calculadora_sexo">
+                  <tr>
+                    <th>Sexo</th>
+                    <th>
+                      <a href="#faq_sexo">
+                        <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                        height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                        </a>
+                      </th>
+                  </tr>
+      
+                  <tr>
+                    <td>
+                      <img src="imagens/corpo/calculadora/corpo_calculadora_simbolomascIII.svg" alt="Simbolo do sexo masculino"
+                        height="80px" width="80px" /><br>
+                      <input type="radio" id="corpo_calculadora_simbolomasc" name="sexo_usuario" value="Homem">
+                      <label for="vehicle1">Masculino</label><br>
+                    </td>
+      
+                    <td>
+                      <img src="imagens/corpo/calculadora/corpo_calculadora_simbolofemII.svg" alt="Simbolo do sexo feminino"
+                        height="80px" width="80px" /><br>
+                      <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
+                      <label for="vehicle1">Feminino</label><br>
+                    </td>
+                  </tr>
+      
+                </table>
+              </div>
+          
+              <!-- TABELA SOBRE A IDADE DO USUÁRIO -->
+              <div class="col-lg-3 col-md-6">
+                <table id="corpo_calculadora_idade" style="margin-right: 120px;">
 
-            <tr style="display: flex;" >
-              <th>Sexo</th>
-              <th>
-                <a href="#faq_sexo">
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
-                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
-                  </a>
-                </th>
-            </tr>
+                  <tr>
+                    <th>Idade</th>
+                    <th>
+                      <a href="#faq_idade">
+                        <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                        height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                        </a>
+                    </th>
+                  </tr>
+      
+                  <tr>
+                    <td>
+                      <img src="imagens/corpo/calculadora/corpo_idade.svg" alt="Ícone de calendário" height="80px"
+                        width="80px" />
+                    </td>
+      
+                    <td>
+                      <input type="number" id="corpo_form_idade" placeholder="18 (anos)"/>
+                    </td>
+                  </tr>
+      
+                </table>
+              </div>
+          
+              <!-- TABELA SOBRE A ALTURA DO USUÁRIO -->
+              <div class="col-lg-3 col-md-6">
+                <table id="corpo_calculadora_altura" style="margin-right: 120px;">
 
-            <tr>
-              <td>
-                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolomascIII.svg" alt="Simbolo do sexo masculino"
-                  height="80px" width="80px" /><br>
-                <input type="radio" id="corpo_calculadora_simbolomasc" name="sexo_usuario" value="Homem">
-                <label for="vehicle1">Masculino</label><br>
-              </td>
+                  <tr style="display: flex;" >
+                    <th>Altura</th>
+                    <th>
+                      <a href="#faq_altura">
+                        <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                        height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                        </a>
+                      </th>
+                  </tr>
+      
+                  <tr>
+                    <td>
+                      <img src="imagens/corpo/calculadora/corpo_altura.svg" alt="Ícone de altura" height="80px"
+                        width="80px" />
+                    </td>
+      
+                    <td>
+                      <input type="number" step="any" id="corpo_form_altura" placeholder="1,90 (cm)"/>
+                    </td>
+                  </tr>
+      
+                </table>
+              </div>
+          
+              <!-- TABELA SOBRE O PESO DO USUÁRIO -->
+              <div class="col-lg-3 col-md-6">
+                <table id="corpo_calculadora_peso" style="margin-left: -120px;">
 
-              <td>
-                <img src="imagens/corpo/calculadora/corpo_calculadora_simbolofemII.svg" alt="Simbolo do sexo feminino"
-                  height="80px" width="80px" /><br>
-                <input type="radio" id="corpo_calculadora_simbolofem" name="sexo_usuario" value="Mulher">
-                <label for="vehicle1">Feminino</label><br>
-              </td>
-            </tr>
-
-          </table>
-
-          <!-- TABELA SOBRE A IDADE DO USUÁRIO -->
-          <table id="corpo_calculadora_idade">
-
-            <tr style="display: flex;">
-              <th>Idade</th>
-              <th>
-                <a href="#faq_idade">
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
-                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
-                  </a>
-              </th>
-            </tr>
-
-            <tr>
-              <td>
-                <img src="imagens/corpo/calculadora/corpo_idade.svg" alt="Ícone de calendário" height="80px"
-                  width="80px" />
-              </td>
-
-              <td>
-                <input type="number" id="corpo_form_idade" placeholder="18 (anos)"/>
-              </td>
-            </tr>
-
-          </table>
-
-          <!-- TABELA SOBRE A ALTURA DO USUÁRIO -->
-          <table id="corpo_calculadora_altura" style="margin-top: 15px;" >
-
-            <tr style="display: flex;" >
-              <th>Altura</th>
-              <th>
-                <a href="#faq_altura">
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
-                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
-                  </a>
-                </th>
-            </tr>
-
-            <tr>
-              <td>
-                <img src="imagens/corpo/calculadora/corpo_altura.svg" alt="Ícone de altura" height="80px"
-                  width="80px" />
-              </td>
-
-              <td>
-                <input type="number" step="any" id="corpo_form_altura" placeholder="1,90 (cm)"/>
-              </td>
-            </tr>
-
-          </table>
-
-          <!-- TABELA SOBRE O PESO DO USUÁRIO -->
-          <table id="corpo_calculadora_peso" style="margin-left: -62px; margin-top: 15px;" >
-
-            <tr style="display: flex;" >
-              <th>Peso</th>
-              <th>
-                <a href="#faq_peso">
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
-                  height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
-                  </a>
-                </th>
-            </tr>
-
-            <tr>
-              <td>
-                <img src="imagens/corpo/calculadora/corpo_peso.svg" alt="Ícone de balança de banheiro" height="80px"
-                  width="80px" />
-              </td>
-
-              <td>
-                <input type="number" id="corpo_form_peso" placeholder="71 (kg)" />
-              </td>
-            </tr>
-          </table>
-        </div>
+                  <tr style="display: flex;" >
+                    <th>Peso</th>
+                    <th>
+                      <a href="#faq_peso">
+                        <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+                        height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+                        </a>
+                      </th>
+                  </tr>
+      
+                  <tr>
+                    <td>
+                      <img src="imagens/corpo/calculadora/corpo_peso.svg" alt="Ícone de balança de banheiro" height="80px"
+                        width="80px" />
+                    </td>
+      
+                    <td>
+                      <input type="number" id="corpo_form_peso" placeholder="71 (kg)" />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+          
+            </div>
+          </div>
 
           <!-- TABELA SOBRE A ATIVIDADE DIÁRIA DO USUÁRIO -->
-          <div id="div2">
-          <table id="corpo_calculadora_atividade">
-
-            <!-- CABEÇALHO DA TABELA -->
-            <tr style="display: flex;" >
-              <th>Atividade Diária</th> <br><br>
-              <th>
-                <a href="#faq_atividade">
-                <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
-                height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
-                </a>
-              </th>
-            </tr>
-
-            <!-- ONDE FICA CADA ESCOLHA (DAS 4 POSSÍVEIS) -->
-            <tr style="display: flex;" >
-              <!-- ATIVIDADE LEVE -->
-              <div id="atividade_leve" > 
-                <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" class="imagem_atividades" id="imagem_atividades_imagens" alt="Pessoa palito sentado"
-                    height="80px" width="80px"/>
-                </td>
-
-                <td>
-                  <input type="radio" id="corpo_calculadora_ativleve" name="atividade_diaria" value="Leve">
-                  <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Leve</div></label>
-                  <p>Sentado na maior parte do tempo <i>(trabalho em escritório)</i></p>
-                </td>
+          <tr  >
+            <th>Atividade Diária</th> <br><br>
+            <th>
+              <a href="#faq_atividade">
+              <img src="imagens/corpo/calculadora/corpo_calculadora_info.png" alt="Simbolo de informacao"
+              height="15px" width="15px" class="calc_img_info" href="#faq_sexo"/>
+              </a>
+            </th>
+          </tr>
+         <!-- ONDE FICA CADA ESCOLHA (DAS 4 POSSÍVEIS) -->
+          <div class="container">
+            <div class="row gx-5 ">
+          
+              <div class="col-lg-3 col-md-6">
+                 <!-- ATIVIDADE LEVE -->
+                <div id="atividade_leve" > 
+                  <td>
+                    <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" class="imagem_atividades" id="imagem_atividades_imagens" alt="Pessoa palito sentado"
+                      height="80px" width="80px"/>
+                  </td>
+  
+                  <td>
+                    <input type="radio" id="corpo_calculadora_ativleve" name="atividade_diaria" value="Leve">
+                    <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Leve</div></label>
+                    <p>Sentado na maior parte do tempo <i>(trabalho em escritório)</i></p>
+                  </td>
+                </div>
               </div>
-
-              <!-- ATIVIDADE MODERADA -->
-              <div id="atividade_moderada">
-                <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhomoderado.png" class="imagem_atividades" alt="Pessoa palito garçom"
-                    height="80px" width="50px"/>
-                </td>
-
-                <td>
-                  <input type="radio" id="corpo_calculadora_ativmoderada" name="atividade_diaria" value="Moderada">
-                  <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Moderada</div></label>
-                  <p>Em pé na maior parte do tempo <i>(garçon)</i></p>
-                </td>
+          
+              <div class="col-lg-3 col-md-6">
+                <!-- ATIVIDADE MODERADA -->
+                <div id="atividade_moderada">
+                  <td>
+                    <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhomoderado.png" class="imagem_atividades" alt="Pessoa palito garçom"
+                      height="80px" width="50px"/>
+                  </td>
+  
+                  <td>
+                    <input type="radio" id="corpo_calculadora_ativmoderada" name="atividade_diaria" value="Moderada">
+                    <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Moderada</div></label>
+                    <p>Em pé na maior parte do tempo <i>(garçon)</i></p>
+                  </td>
+                </div>
               </div>
-
-              <!-- ATIVIDADE ELEVADA -->
-              <div id="atividade_elevada">
-                <td >
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" class="imagem_atividades" alt="Pessoa palito andando"
-                    height="80px" width="80px" />
-                </td>
-
-                <td>
-                  <input type="radio" id="corpo_calculadora_ativelevada" name="atividade_diaria" value="Elevada">
-                  <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Elevada</div></label>
-                  <p>Andando na maior parte do tempo <i>(vendedor)</i></p>
-                </td>
+          
+              <div class="col-lg-3 col-md-6">
+                <!-- ATIVIDADE ELEVADA -->
+                <div id="atividade_elevada">
+                  <td >
+                    <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" class="imagem_atividades" alt="Pessoa palito andando"
+                      height="80px" width="80px" />
+                  </td>
+  
+                  <td>
+                    <input type="radio" id="corpo_calculadora_ativelevada" name="atividade_diaria" value="Elevada">
+                    <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Elevada</div></label>
+                    <p>Andando na maior parte do tempo <i>(vendedor)</i></p>
+                  </td>
+                </div>
               </div>
-
-              <!-- ATIVIDADE PESADA -->
-              <div id="atividade_pesada">
-                <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhopesado.png"
-                  class="imagem_atividades" id="imagem_atividades_imagens" alt="Pessoa palito carregando caixa" height="80px" width="50px"/>
-                </td>
-
-                <td>
-                  <input type="radio" id="corpo_calculadora_ativpesada" name="atividade_diaria" value="Pesada">
-                  <label for="vehicle1" style="margin-left: 5px;" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Pesada</div></label>
-                  <p>Trabalho que exige muita atividade <i>(entregador)</i></p>
-                </td>
+          
+              <div class="col-lg-3 col-md-6">
+                  <!-- ATIVIDADE PESADA -->
+                <div id="atividade_pesada">
+                  <td>
+                    <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhopesado.png"
+                    class="imagem_atividades" id="imagem_atividades_imagens" alt="Pessoa palito carregando caixa" height="80px" width="50px"/>
+                  </td>
+  
+                  <td>
+                    <input type="radio" id="corpo_calculadora_ativpesada" name="atividade_diaria" value="Pesada">
+                    <label for="vehicle1" style="margin-left: 5px;" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Pesada</div></label>
+                    <p>Trabalho que exige muita atividade <i>(entregador)</i></p>
+                  </td>
+                </div>
               </div>
-            </tr>
-          </table>
+          
+            </div>
+            <button name="calcular" id="calculadora_botao" type="button" onclick="calcularCalorias()">Calcular calorias!</button>
+          </div>
 
-          <button name="calcular" id="calculadora_botao" type="button" onclick="calcularCalorias()">Calcular calorias!</button>
-
-        </div>
-        </form>
     </section>
 
     <!-- INÍCIO DOS RESULTADOS -->
     <section id="resultados">
       <h1>Resultados</h1>
-
-      <table id="resultado_perder">
-        <tr>
-          <td>
-            <img src="imagens/corpo/resultado/corpo_resultado_perder.svg" class="resultado_imagens" alt="Pessoa palito carregando caixa"
-            height="80px" width="80px"/>
-          </td>
-
-          <td class="resultado_texto">
-            <div class="resultado_texto">
-              <p><b>PERDER</b> peso</p>
-              <p id="resultado_pcaloria">XXXX</p>
-              <p>calorias</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-
-      <table id="resultado_manter">
-        <tr>
-          <td>
-            <img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
-            height="80px" width="80px"/>
-          </td>
-
-          <td>
-            <div class="resultado_texto">
-              <p><b>MANTER</b> peso</p>
-              <p id="resultado_mcaloria">XXXX</p>
-              <p>calorias</p>
-            </div>
-          </td>
-        </tr>
-      </table>
-
-      <table id="resultado_manter">
-        <tr>
-          <td><img src="imagens/corpo/resultado/corpo_resultado_ganhar.svg" alt="Pessoa palito carregando caixa"
-            height="80px" width="80px"/>
-          </td>
-
-          <td>
-            <div class="resultado_texto">
-              <p><b>GANHAR</b> peso</p>
-              <p id="resultado_gcaloria">XXXX</p>
-              <p>calorias</p>
-            </div>
-        </td>
-      </tr>
-      </table>
-    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <table id="resultado_perder">
+            <tr>
+              <td>
+                <img src="imagens/corpo/resultado/corpo_resultado_perder.svg" class="resultado_imagens" alt="Pessoa palito carregando caixa"
+                height="80px" width="80px"/>
+              </td>
+    
+              <td class="resultado_texto">
+                <div class="resultado_texto">
+                  <p><b>PERDER</b> peso</p>
+                  <p id="resultado_pcaloria">XXXX</p>
+                  <p>calorias</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+    
+        </div>
+    
+        <div class="col-lg-4 col-md-6">
+          <table id="resultado_manter">
+            <tr>
+              <td>
+                <img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
+                height="80px" width="80px"/>
+              </td>
+    
+              <td>
+                <div class="resultado_texto">
+                  <p><b>MANTER</b> peso</p>
+                  <p id="resultado_mcaloria">XXXX</p>
+                  <p>calorias</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+    
+        <div class="col-lg-4 col-md-6">
+          <table id="resultado_manter">
+            <tr>
+              <td><img src="imagens/corpo/resultado/corpo_resultado_ganhar.svg" alt="Pessoa palito carregando caixa"
+                height="80px" width="80px"/>
+              </td>
+    
+              <td>
+                <div class="resultado_texto">
+                  <p><b>GANHAR</b> peso</p>
+                  <p id="resultado_gcaloria">XXXX</p>
+                  <p>calorias</p>
+                </div>
+            </td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- INÍCIO DO COMPARTILHE -->
     <section id="compartilhe" style="margin-left: 210px;">
