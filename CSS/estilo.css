@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 html {
 scroll-behavior: smooth;
 }
@@ -37,10 +35,7 @@ header {
 header .img_icone {
   height: 60px;
   width: 65px;
-  display: inline-block;
-  float: left;
-  
-  
+  display: inline-block;  
 }
 
 header h1 {
@@ -135,6 +130,33 @@ td{
   padding: 0px;
 }
 
+#imagem_atividades_imagens {
+  padding-right: 5px;
+}
+
+.titulo_atividades {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.titulo_atividades_div {
+  padding-top: 10px;
+}
+
+.imagem_atividades {
+  position: relative;
+  padding-top: 60px;
+}
+
+td{
+  text-align: center;
+}
+
+.resultado_texto {
+  text-align: center;
+}
+
 #resultado_perder_calorias, #resultado_manter_calorias, #resultado_ganhar_calorias {
   color: green;
 }
@@ -216,5 +238,4 @@ div {
   justify-content: space-around;
   margin-top: 5px;
   margin-right: 50px;
-
 }
