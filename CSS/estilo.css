@@ -116,10 +116,6 @@ section {
   text-align: center;
 }
 
-.titulo_atividades_div {
-  padding-top: 10px;
-}
-
 .imagem_atividades {
   position: relative;
   padding-top: 60px;
@@ -156,6 +152,7 @@ td{
 .titulo_atividades_div {
   padding-top: 10px;
   padding-left: 0px;
+  margin-left: 0;
 }
 
 .imagem_atividades {
