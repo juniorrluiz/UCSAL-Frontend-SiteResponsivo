@@ -95,7 +95,7 @@ function calcularCalorias() {
     // var resultado_aa = document.getElementById('resultado_pcaloria').innerHTML;
     // console.log(resultado_aa);
 
-  document.getElementById('resultado_pcaloria').innerHTML = resultado_ganhar;
+  document.getElementById('resultado_gcaloria').innerHTML = resultado_ganhar;
   document.getElementById('resultado_mcaloria').innerHTML = resultado_manter;
-  document.getElementById('resultado_gcaloria').innerHTML = resultado_perder;
+  document.getElementById('resultado_pcaloria').innerHTML = resultado_perder;
 }
