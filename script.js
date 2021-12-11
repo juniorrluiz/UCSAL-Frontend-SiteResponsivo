@@ -1,9 +1,16 @@
 function calcularCalorias() {
+  
+
+  
   var sexo_do_usuario;
   var sexo = document.getElementsByName('sexo_usuario');
   for (var i = 0; i < sexo.length; i++) {
    if (sexo[i].checked) {
     sexo_do_usuario = sexo[i].value;
+    } else if (!sexo[0].checked && !sexo[1].checked) {
+      window.alert("Atenção! Você não selecionou o sexo.")
+      return;
+      
     }
   }
 
@@ -18,6 +25,9 @@ function calcularCalorias() {
   for (var i = 0; i < atividade.length; i++) {
    if (atividade[i].checked) {
     atividade_diaria = atividade[i].value;
+    } else if (!atividade[0].checked && !atividade[1].checked && !atividade[2].checked && !atividade[3].checked) {
+      window.alert("Atenção! Você não selecionou a atividade diária.")
+      return;
     }
   }
 
