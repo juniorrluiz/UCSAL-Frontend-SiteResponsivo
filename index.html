@@ -372,7 +372,6 @@
     <!-- INÍCIO DO SOBRE NÓS -->
     <section id="sobrenos">
       <h1>Sobre a U8</h1>
-
       <div id="sobrenos_quem_somos">
         <h5>Quem somos?</h5>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -384,7 +383,7 @@
       </div>
 
       <div id="sobrenos_nosso_time">
-        <h5 id="nosso_time_id">O nosso time</h5>
+        <h5>O Nosso Time</h5>
         <br>
         <table id="sobrenos_nosso_time_imagens">
           <tr>
@@ -400,23 +399,24 @@
           </tr>
 
           <tr>
-            <td>CEO</td>
-            <td>Engenheiro de Software</td>
-            <td>Gerente de Projetos</td>
+            <td><i>CEO</i></td>
+            <td><i>Engenheiro de Software</i></td>
+            <td><i>Gerente de Projetos</i></td>
           </tr>
         </table>
       </div>
 
       <div id="sobrenos_contato">
-        <form>
-          <label for="nome">Nome (requerido)</label><br>
+        <h5>Contato</h5>
+        <form id="contato_form">
+          <label class="contato_label" for="nome">Nome (requerido)</label><br>
           <input type="text" id="nome" name="nome"><br>
 
-          <label for="email">Email (requerido)</label><br>
+          <label class="contato_label" for="email">Email (requerido)</label><br>
           <input type="email" id="email" name="email"><br>
 
-          <label for="corpo">Mensagem</label><br>
-          <textarea id="corpo" name="mensagem" rows="4" cols="50"></textarea><br>
+          <label class="contato_label" for="corpo">Mensagem</label><br>
+          <textarea id="corpo" name="mensagem"></textarea><br>
 
           <button type=”submit”>Enviar</button>
         </form>
