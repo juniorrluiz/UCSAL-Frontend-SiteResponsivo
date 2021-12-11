@@ -153,6 +153,7 @@ td{
 
 #resultado_perder_calorias, #resultado_manter_calorias, #resultado_ganhar_calorias {
   color: green;
+  font-weight: bold;
 }
 
 .faq {
