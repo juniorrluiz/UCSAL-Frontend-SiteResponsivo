@@ -151,7 +151,7 @@ td{
   padding-right: 5px;
 }
 
-#resultado_perder_calorias, #resultado_manter_calorias, #resultado_ganhar_calorias {
+#resultado_pcaloria, #resultado_mcaloria, #resultado_gcaloria {
   color: green;
   font-weight: bold;
 }

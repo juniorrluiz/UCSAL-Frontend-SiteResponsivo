@@ -1,7 +1,5 @@
 function calcularCalorias() {
   
-
-  
   var sexo_do_usuario;
   var sexo = document.getElementsByName('sexo_usuario');
   for (var i = 0; i < sexo.length; i++) {
@@ -52,21 +50,28 @@ function calcularCalorias() {
   var resultado;
   if (sexo_do_usuario = "Homem") {
     resultado = (66.5 + (13.4 * peso) + (5 * altura) - (6.7 * idade)) * atividade_diaria_valor;
-//      alert("Resultado H: " + resultado);
+      // alert("Resultado H: " + resultado);
   } else if (sexo_do_usuario = "Mulher") {
     resultado = (65.1 + (9.6 * Peso) + (1.8 * altura) - (4.5 * idade)) * atividade_diaria_valor;
-//      alert("Resultado M: " + resultado);
+      // alert("Resultado M: " + resultado);
   }
 
   var resultado_perder = Math.round(resultado - 200);
   var resultado_manter = Math.round(resultado);
   var resultado_ganhar = Math.round(resultado + 200);
 
-//    alert(resultado_ganhar);
-//    alert(resultado_manter);
-//    alert(resultado_perder);
+  // console.log(resultado_ganhar);
+  // console.log(resultado_manter);
+  // console.log(resultado_perder);
 
-  document.getElementById('resultado_ganhar_calorias').innerHTML = resultado_ganhar;
-  document.getElementById('resultado_manter_calorias').innerHTML = resultado_manter;
-  document.getElementById('resultado_perder_calorias').innerHTML = resultado_perder;
+    // alert(resultado_ganhar);
+    // alert(resultado_manter);
+    // alert(resultado_perder);
+
+    // var resultado_aa = document.getElementById('resultado_pcaloria').innerHTML;
+    // console.log(resultado_aa);
+
+  document.getElementById('resultado_pcaloria').innerHTML = resultado_ganhar;
+  document.getElementById('resultado_mcaloria').innerHTML = resultado_manter;
+  document.getElementById('resultado_gcaloria').innerHTML = resultado_perder;
 }
