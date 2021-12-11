@@ -13,12 +13,34 @@ function calcularCalorias() {
   }
 
   var idade = document.getElementById("corpo_form_idade").value;
+  var idade2 = parseInt(idade)
+
+  if (isNaN(idade2)) {
+    window.alert("Atenção! Você não digitou uma idade.")
+    return;
+      
+  }
 
   console.log(idade);
 
   var altura = document.getElementById("corpo_form_altura").value;
+  var altura2 = parseInt(altura)
+
+  if (isNaN(altura2)) {
+    window.alert("Atenção! Você não digitou uma altura.")
+    return;
+      
+  }
 
   var peso = document.getElementById("corpo_form_peso").value;
+  var peso2 = parseInt(peso)
+
+  if (isNaN(peso2)) {
+    window.alert("Atenção! Você não digitou um peso.")
+    return;
+      
+  }
+  
 
   var atividade_diaria;
   var atividade = document.getElementsByName('atividade_diaria');
