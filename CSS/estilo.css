@@ -24,11 +24,7 @@ body {
 main {
   width: 720px;
   margin: auto;
- 
-  
-  
   background: linear-gradient(to right, #ece9e6, #ffffff);
-  
 }
 
 header {
@@ -107,8 +103,35 @@ section{
   margin-left: 5px;
 }
 
+#imagem_atividades_imagens {
+  padding-right: 5px;
+}
+
+.titulo_atividades {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.titulo_atividades_div {
+  padding-top: 10px;
+}
+
+.imagem_atividades {
+  position: relative;
+  padding-top: 60px;
+}
+
 td{
   text-align: center;
+}
+
+.resultado_texto {
+  text-align: center;
+}
+
+#resultado_perder_calorias, #resultado_manter_calorias, #resultado_ganhar_calorias {
+  color: green;
 }
 
 .faq {
@@ -161,9 +184,6 @@ td{
   background-position: center;
   background-size: 70%;
   margin: auto;
-  
-  
-  
 }
 
 div {

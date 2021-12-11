@@ -158,42 +158,42 @@
               <!-- ATIVIDADE LEVE -->
               <div id="atividade_leve"  style="margin-top: 15px;"> 
                 <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" alt="Pessoa palito sentado"
-                    height="80px" width="80px" /><br>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalholeve.png" class="imagem_atividades" id="imagem_atividades_imagens" alt="Pessoa palito sentado"
+                    height="80px" width="80px"/>
                 </td>
 
                 <td style="margin-top: 4px;">
-                  <input type="radio" id="corpo_calculadora_ativleve" name="atividade_diaria" value="Leve" >
-                  <label for="vehicle1"> <br> Atividade Leve</label><br>
-                  <p>Sentado na maior parte do tempo (ex.:trabalho em escritório)</p>
+                  <input type="radio" id="corpo_calculadora_ativleve" name="atividade_diaria" value="Leve">
+                  <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Leve</div></label>
+                  <p>Sentado na maior parte do tempo <i>(trabalho em escritório)</i></p>
                 </td>
               </div>
 
               <!-- ATIVIDADE MODERADA -->
               <div id="atividade_moderada">
                 <td>
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhomoderado.png" alt="Pessoa palito garçom"
-                    height="80px" width="50px" /><br>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhomoderado.png" class="imagem_atividades" alt="Pessoa palito garçom"
+                    height="80px" width="50px"/>
                 </td>
 
                 <td>
                   <input type="radio" id="corpo_calculadora_ativmoderada" name="atividade_diaria" value="Moderada">
-                  <label for="vehicle1"> <br> Atividade Moderada</label><br>
-                  <p>Em pé na maior parte do tempo (ex.:garçon)</p>
+                  <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Moderada</div></label>
+                  <p>Em pé na maior parte do tempo <i>(garçon)</i></p>
                 </td>
               </div>
 
               <!-- ATIVIDADE ELEVADA -->
               <div id="atividade_elevada">
                 <td >
-                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" alt="Pessoa palito andando"
-                    height="80px" width="80px" /><br>
+                  <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhoativo.svg" class="imagem_atividades" alt="Pessoa palito andando"
+                    height="80px" width="80px" />
                 </td>
 
                 <td>
                   <input type="radio" id="corpo_calculadora_ativelevada" name="atividade_diaria" value="Elevada">
-                  <label for="vehicle1"> <br> Atividade Elevada</label><br>
-                  <p>Andando na maior parte do tempo (ex.:vendedor)</p>
+                  <label for="vehicle1" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Elevada</div></label>
+                  <p>Andando na maior parte do tempo <i>(vendedor)</i></p>
                 </td>
               </div>
 
@@ -201,19 +201,19 @@
               <div id="atividade_pesada">
                 <td>
                   <img src="imagens/corpo/calculadora/corpo_calculadora_trabalhopesado.png"
-                    alt="Pessoa palito carregando caixa" height="80px" width="50px" /><br>
+                  class="imagem_atividades" id="imagem_atividades_imagens" alt="Pessoa palito carregando caixa" height="80px" width="50px"/>
                 </td>
 
                 <td>
                   <input type="radio" id="corpo_calculadora_ativpesada" name="atividade_diaria" value="Pesada">
-                  <label for="vehicle1" style="margin-left: 5px;"> <br> Atividade <br> Pesada</label><br>
-                  <p>Trabalho que exige muita atividade (ex.:entregador)</p>
+                  <label for="vehicle1" style="margin-left: 5px;" class="titulo_atividades"><div class="titulo_atividades_div">Atividade Pesada</div></label>
+                  <p>Trabalho que exige muita atividade <i>(entregador)</i></p>
                 </td>
               </div>
             </tr>
           </table>
 
-          <button name="calcular" type="button" onclick="calcularCalorias()">Calcular as calorias !</button>
+          <button name="calcular" type="button" onclick="calcularCalorias()">Calcular calorias!</button>
 
         </div>
         </form>
@@ -225,44 +225,49 @@
 
       <table id="resultado_perder">
         <tr>
-          <img src="imagens/corpo/resultado/corpo_resultado_perder.svg" alt="Pessoa palito carregando caixa"
+          <td>
+            <img src="imagens/corpo/resultado/corpo_resultado_perder.svg" alt="Pessoa palito carregando caixa"
             height="100px" width="100px" />
-        </tr>
+          </td>
 
-        <tr>
+          <td class="resultado_texto">
           <p>Para PERDER peso</p>
           <p>Aproximadamente</p>
-          <label id="resultado_perder_calorias">XXXX</label>
+          <label id="resultado_perder_calorias"><b>XXXX</b></label>
           <p>calorias</p>
+          </td>
         </tr>
       </table>
 
       <table id="resultado_manter">
         <tr>
-          <img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
+          <td>
+            <img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
             height="100px" width="100px" />
-        </tr>
+          </td>
 
-        <tr>
-          <p>Para MANTER peso</p>
-          <p>Aproximadamente</p>
-          <label id="resultado_manter_calorias">XXXX</label>
-          <p>calorias</p>
+          <td>
+            <p>Para MANTER peso</p>
+            <p>Aproximadamente</p>
+            <label id="resultado_manter_calorias"><b>XXXX</b></label>
+            <p>calorias</p>
+          </td>
         </tr>
       </table>
 
       <table id="resultado_manter">
         <tr>
-          <img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
+          <td><img src="imagens/corpo/resultado/corpo_resultado_manter.svg" alt="Pessoa palito carregando caixa"
             height="100px" width="100px" />
-        </tr>
+          </td>
 
-        <tr>
-          <p>Para GANHAR peso</p>
-          <p>Aproximadamente</p>
-          <label id="resultado_ganhar_calorias">XXXX</label>
-          <p>calorias</p>
-        </tr>
+          <td>
+            <p>Para GANHAR peso</p>
+            <p>Aproximadamente</p>
+            <label id="resultado_manter_calorias"><b>XXXX</b></label>
+            <p>calorias</p>
+        </td>
+      </tr>
       </table>
     </section>
 
