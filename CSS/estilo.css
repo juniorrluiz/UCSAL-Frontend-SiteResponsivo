@@ -27,9 +27,6 @@ header {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(71, 166, 255);
-  
-  
-
 }
 
 header .img_icone {
@@ -58,22 +55,18 @@ header #menu_social {
   margin-top: -15px;
   width: 550px;
   margin-bottom: 20px;
-  float: right;
-  
+  float: right;  
 }
 
 header #menu_social ul {
   height: 10px;
   float: right;
-
 }
 
-header #menu_social ul li {
-  
+header #menu_social ul li {  
   padding: 10px;
   list-style: none;
-  float: right;
-  
+  float: right;  
 }
 
 header #menu_social ul li a {
@@ -155,6 +148,7 @@ td{
 
 .resultado_texto {
   text-align: center;
+  padding-right: 5px;
 }
 
 #resultado_perder_calorias, #resultado_manter_calorias, #resultado_ganhar_calorias {
